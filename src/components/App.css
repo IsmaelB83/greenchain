@@ -1,0 +1,14 @@
+.App {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    border: 1px solid red;
+}
+
+.MainContainer {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    overflow: hidden;
+    border: 1px solid red;
+}

@@ -1,17 +1,21 @@
+// Node imports
 import React from 'react';
 import ReactDOM from 'react-dom/client';
+// Own components
+import App from './components/App';
+// Own modules
+import GreenchainContextProvider from './context/Context';
+
+// Styles
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+root.render(
+    <React.StrictMode>
+        <GreenchainContextProvider>
+            <App />
+        </GreenchainContextProvider>
+    </React.StrictMode>
+);

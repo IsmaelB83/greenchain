@@ -1,0 +1,32 @@
+.SideMenu {
+    width: 300px;
+    text-align: left;
+}
+
+.SideMenu__Actions {
+    width: 100%;
+    height: 100px;
+    height: auto;
+    border: 1px solid red;
+}
+
+.SideMenu__Actions .Buttons {
+    display: flex;
+    justify-content: space-between;
+}
+
+.SideMenu__Assets {
+    height: calc(100% - 100px);
+    overflow-y: scroll;
+    border: 1px solid red;
+}
+
+.SideMenu .spinner {
+    width: 75px;
+}
+
+.SideMenu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
